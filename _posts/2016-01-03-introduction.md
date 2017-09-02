@@ -1,12 +1,35 @@
 ---
 layout: post
-title: Introduction
+title: Logical Inconsistencies and Ego Protection
 ---
+
+Logical Inconsistency
+- lying contradictory statements (internally inconsistent)
+  - internally inconsistent
+  - inconsistent with the world
+    - everything fits in to one bag
+    - did they ask about pit?
+- rounding up
+rounding up from jacki
+- qualitative exaggeration
+- talking out of your ass
+
+solutions
+- test against the world
+- test against other sources
+  - kevin sam
+  - bill generette
+  - evan/jason
+  - kate shane
+  
+blind stitch
+6oz
+james hoffman
 
 *The Strange Case of Dr. Jekyll and Mr. Hyde* tells the story of a lawyer investigating the connection of two persons, Dr. Henry Jekyll and Mr. Edward Hyde. Chief among the novel's supporting cast is a man by the name of Mr. Poole, Dr. Jekyll's loyal butler.
 
 -----
-
+this is just a test
 Poole is the butler for [Jekyll](http://jekyllrb.com), the static site generator. It's designed and developed by [@mdo](https://twitter.com/mdo) to provide a clear and concise foundational setup for any Jekyll site. It does so by furnishing a full vanilla Jekyll install with example layouts, pages, posts, and styles.
 
 There are currently three themes built on Poole:

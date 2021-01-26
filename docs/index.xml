@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Poorly Made Point</title>
+    <link>http://example.org/</link>
+    <description>Recent content on The Poorly Made Point</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 Jan 2021 15:36:25 -0500</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test</title>
+      <link>http://example.org/posts/test/</link>
+      <pubDate>Mon, 25 Jan 2021 15:36:25 -0500</pubDate>
+      
+      <guid>http://example.org/posts/test/</guid>
+      <description> ha!   </description>
+    </item>
+    
+    <item>
+      <title>My second Post</title>
+      <link>http://example.org/posts/my-first-post/</link>
+      <pubDate>Sun, 27 Dec 2020 14:28:15 -0500</pubDate>
+      
+      <guid>http://example.org/posts/my-first-post/</guid>
+      <description> this is a heading  and this is a sub-head head      </description>
+    </item>
+    
+  </channel>
+</rss>

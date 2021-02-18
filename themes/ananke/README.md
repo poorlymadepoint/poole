@@ -35,7 +35,7 @@ Also includes examples of Hugo Features or Functions:
 - `where`
 - Content Views
 - Partials
-- Template layouts (type "post" uses a special list template, single template,  and a content view)
+- Template layouts (type "post" uses a special list template, single template, and a content view)
 - Tags
 - `len`
 - Conditionals
@@ -51,16 +51,23 @@ This theme uses the "Tachyons" CSS library. This will allow you to manipulate th
 
 ### As a Hugo Module (recommended)
 
-If not already, init your project as Hugo Module:
+> ⚠️ If you installed a [Hugo binary](https://gohugo.io/getting-started/installing/#binary-cross-platform), you may not have Go installed on your machine. To check if Go is installed:
+> ```
+> $ go version
+> ```
+>  Go modules were considered production ready in v1.14. [Download Go](https://golang.org/dl/). 
 
-`$: hugo mod init {project_repo_url}`
+1. From your project's root directory, initiate the hugo module system if you haven't already:
 
-Simply add the repo to your theme option:
+   ```
+   $ hugo mod init github.com/<your_user>/<your_project>
+   ```
 
-```yaml
-theme:
-  - github.com/theNewDynamic/gohugo-theme-ananke
-```
+2. Add the theme's repo to your `config.toml`:
+
+   ```toml
+   theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
+   ```
 
 ### As Git Submodule
 
@@ -151,6 +158,30 @@ For example, if your css files are `static/css/custom.css` and `static/css/custo
     [params]
       custom_css = ["css/custom.css","css/custom2.css"]
 ```
+
+### Processed CSS
+
+By default, Ananke will read a preprocessed stylesheet from `/assets/ananke/dist/main.[hash].css`. If you want to have Hugo process the stylesheet for you thus allowing better customisation using Hugo's unison file system, you need to:
+
+1. From the root of your project: `$ hugo mod npm pack`.  
+This will generate a `package.json` for your project, or append the npm packages required by the theme to your existing `package.json`.
+2. Still from the root of your project: `$ npm install`
+3. Set the following site Parameter to true:
+
+```
+    [params]
+      ananke_process_css = true
+```
+
+You're all set an can run Hugo.
+
+#### Overwrite some imported file
+
+To have your own `_code.css` imported and processed by the theme. Add `/assets/ananke/css/_code.css` to your project.
+
+#### Add a new import
+
+Create your own `/assets/ananke/css/` directory at the root of your project, drop your files in there, and create your own `/main.css` with your own import statements. Don't forget to include the existing import statement from the theme's own `main.css`.
 
 ### Show Reading Time and Word Count
 
